@@ -83,6 +83,12 @@ main img {
 	text-align: center;
 }
 
+#greeting {	
+	font-size: 1.25em;
+	padding-top: 1%;
+	text-align: center;
+}
+
 #bottomtext {
 	font-size: 0.75em;
 	text-align: center;

@@ -1,3 +1,12 @@
+//let's see if I did this right
+var greeting = "Hello- ";
+var name = "wait, who are you? You shouldn't be here, this is classified.";
+
+var welcomeMessage = greeting + name;
+
+var el = document.getElementById('greeting');
+el.textContent = welcomeMessage;
+
 //Hamburbur menu Function
 function hamburger() {
 	var menu = document.getElementById("menu-links");
