@@ -113,6 +113,12 @@ main img {
 	font-size: 0.85em;
 }
 
+#countit {
+	width: 50%;
+	float: left;
+	font-size: 0.85em;
+}
+
 /* Style rules for footer content */
 footer p {
 	font-size: 0.75em;
