@@ -1,6 +1,6 @@
 //Something close enough I hope
 function updateMessage() {
-	var msg= 'Message John J. Johnson at 555-5255-2555-2-55-225525-555 to redeem your own free feature creature for only $499.89!'
+	var msg= 'Want to feature a feature creature for your own feature creature creature feature? Dial 555-255-5255-522-222-552-CREATURE-52-5555-52555 to buy your own for ABSOLUTELY FREE!! Only $499.81!'
 	var el = document.getElementById('offer')
 	el.textContent = msg;
 }
