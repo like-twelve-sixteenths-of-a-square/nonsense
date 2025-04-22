@@ -107,6 +107,12 @@ main img {
 	padding-bottom: 5%;
 }
 
+#offer {
+	width: 50%;
+	float: left;
+	font-size: 0.75em;
+}
+
 /* Style rules for footer content */
 footer p {
 	font-size: 0.75em;

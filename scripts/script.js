@@ -1,4 +1,4 @@
-//let's see if I did this right
+//Hello :3
 var greeting = "Hello- ";
 var name = "wait, who are you? You shouldn't be here, this is classified.";
 
