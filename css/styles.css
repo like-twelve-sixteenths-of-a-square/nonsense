@@ -118,6 +118,11 @@ main img {
 	font-size: 0.85em;
 }
 
+#buffer {
+	padding-bottom: 2.5%;
+	padding-top: 2.5%;
+}
+
 /* Style rules for footer content */
 footer p {
 	font-size: 0.75em;
