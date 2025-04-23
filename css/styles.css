@@ -118,6 +118,10 @@ main img {
 	font-size: 0.85em;
 }
 
+#buffertop {
+	padding-top: 2.5%;
+}
+
 #buffer {
 	padding-bottom: 2.5%;
 	padding-top: 2.5%;
