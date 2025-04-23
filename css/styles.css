@@ -107,15 +107,14 @@ main img {
 	padding-bottom: 5%;
 }
 
-#offer {
+#info {
 	width: 50%;
 	float: left;
-	font-size: 0.85em;
 }
 
 #countit {
-	width: 50%;
-	float: left;
+	width: 45%;
+	float: middle;
 	font-size: 0.85em;
 }
 
