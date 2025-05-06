@@ -1,22 +1,27 @@
-var operator = 'chatter'; // Obligatory operator thing
-var i = 1;                // Set counter to 1
-var txtRng = Math.floor(Math.random()*25) + 2; //Pick a random number from 2 to 24, I believe
-var msg = '';              // Message
+var noteInput, noteName, textEntered, target;    // Declare variables
 
-if (operator === 'chatter') {
-  // Flip a virtual coin, if heads, say Creature, if tails, say Feature, repeat that a randomized number of times
-  while (i < txtRng) {
-	var blabber = Math.floor(Math.random()*2)+1; //Virtual coin flip, literally just pick a random number between 1 and 2.
-		if (blabber < 2) {
-			msg += 'Creature '; //If 1, say Creature
-			i++;	
-		} else {
-			msg += 'Feature '; //If not 1, say Feature
-			i++;
-		}
+noteName = document.getElementById('noteName');  // Element that holds note
+noteInput = document.getElementById('noteInput');// Input for writing the note
+
+function writeLabel(e) {                         // Declare function
+  if (!e) {                                      // If event object not present
+    e = window.event;                            // Use IE5-8 fallback
   }
+  target = e.target || e.srcElement;             // Get target of event
+  textEntered = target.value;                    // Value of that element
+  noteName.textContent = textEntered;            // Update note text
 }
 
-// Spit out the randomized string of glorious nonsense
-var el = document.getElementById('blabber');
-el.innerHTML = msg;
+if (document.addEventListener) {                 // If event listener supported
+  document.addEventListener('click', function(e) {// For any click document
+    recorderControls(e);                         // Call recorderControls()
+  }, false);                                     // Capture during bubble phase
+  // If input event fires on noteInput input call writeLabel()
+  noteInput.addEventListener('input', writeLabel, false); 
+} else {                                         // Otherwise
+  document.attachEvent('onclick', function(e) {  // IE fallback: any click
+    recorderControls(e);                         // Calls recorderControls() 
+  });
+ // If keyup event fires on noteInput call writeLabel()
+  noteInput.attachEvent('onkeyup', writeLabel);
+}
