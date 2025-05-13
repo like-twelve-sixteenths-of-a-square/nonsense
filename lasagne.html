@@ -66,7 +66,6 @@
 		
 		<!-- Desktop Nav -->
 		<nav class="tablet-desktop">
-		<ul>
 	
 				<li><a href="index.html"><img src="images/home.png" alt="Home"></a></li>
 				
@@ -88,8 +87,6 @@
 				
 				<li><a href="store.html"><img src="images/store.png" alt="test"></a></li>
 			
-		</ul>
-	
 		</nav>
 	
 	<!-- Use the main area to add the main content of the page, obviously-->
@@ -112,9 +109,13 @@
 		
 		<div id="bottomtext">
 			<h2 id="noteName">Give your two cents on this particular museum piece here!</h2>
-			<form action="secret.html">
-			<label for="noteInput">Type your review here:</label>
-			<input type="text" id="noteInput" />
+			<ul>
+	  
+			</ul>
+			<div id="newItemButton"><button href="#" id="showForm">Crack Open a Can of Your Opinion</button></div>
+			<form id="newItemForm">
+				<input type="text" id="itemDescription" placeholder="Say whatever, really." />
+				<input type="submit" id="add" value="Scream Into the Void" />
 			</form>
 			<p>Some entries may be somewhat faulty, simply wiggling the progress slider seems to work if it doesn't play right away.</p>
 		</div>
@@ -130,7 +131,8 @@
 
   </div>
   
-  <script src="scripts/example1.js"></script>
+  <script src="scripts/jquery-1.11.0.js"></script>
+  <script src="scripts/lister.js"></script>
   <script src="scripts/script.js"></script>
 
 </body>
