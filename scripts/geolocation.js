@@ -3,7 +3,7 @@
 // It may take the browser a while to determine your location (his demonstrates why you should not depend on this information before loading the entire page).
 
 var elMap = document.getElementById('loc');                 // HTML element
-var msg = 'Sorry, we were unable to get your location.';    // No location msg
+var msg = 'Yeah, none of our orbital cannons can trace your location, sorry.';    // No location msg
 
 if (Modernizr.geolocation) {                                // Is geo supported
   navigator.geolocation.getCurrentPosition(success, fail);  // Ask for location
@@ -13,10 +13,11 @@ if (Modernizr.geolocation) {                                // Is geo supported
 }
 
 function success(position) {                                // Got location
-  msg = '<h3>Longitude:<br>';                               // Create message
-  msg += position.coords.longitude + '</h3>';               // Add longitude
-  msg += '<h3>Latitude:<br>';                               // Create message
-  msg += position.coords.latitude + '</h3>';                // Add latitude
+  msg = '<h3>Hey, look at that! You are in orbital delivery drop range!</h3>' // Yap nonsense
+  msg += '<h4>Longitude:<br>';                               // Create message
+  msg += position.coords.longitude + '</h4>';               // Add longitude
+  msg += '<h4>Latitude:<br>';                               // Create message
+  msg += position.coords.latitude + '</h4>';                // Add latitude
   elMap.innerHTML = msg;                                    // Show location
 }
 
