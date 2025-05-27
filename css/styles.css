@@ -98,6 +98,7 @@ main img {
 	width: 25%;
 	float: right;
 	padding-bottom: 5%;
+	padding-left: 5%;
 	text-align: center;
 }
 
@@ -126,6 +127,18 @@ main img {
 	padding-bottom: 2.5%;
 	padding-top: 2.5%;
 }
+
+/********** PANELS **********/
+.tab-panel {
+  display: none;
+  color: #666;
+  min-height: 150px;}
+
+.tab-panel.active {
+  display: block;}
+
+.tab-panel p {
+  margin: 20px;}
 
 /* Style rules for footer content */
 footer p {

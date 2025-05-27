@@ -97,8 +97,42 @@
 		
 		<div id="display">
 		
-			<img src="images/beast.png" alt="The Featured Creature">
+			<section class="page">
+
+			  <div class="tabs">
+			  
+			  <p>Witness the Feature Creature from many angles!</p>
+			  
+				<ul class="tab-list">
+				  <li class="active"><a class="tab-control" href="#tab-1"><img src="images/a1.png" alt="Angle 1"></a></li>
+				  <li><a class="tab-control" href="#tab-2"><img src="images/a2.png" alt="Angle 2"></a></li>
+				  <li><a class="tab-control" href="#tab-3"><img src="images/a3.png" alt="Angle 3"></li>
+				  <li><a class="tab-control" href="#tab-4"><img src="images/a4.png" alt="Angle 4"></a></li>
+				</ul>
+
+				<div class="tab-panel active" id="tab-1">
+				   <img src="images/beast.png" alt="The Featured Creature">
+				</div>
+
+				<div class="tab-panel" id="tab-2">
+				   <img src="images/beast1.png" alt="The Featured Creature"> 
+				</div>
+				
+				<div class="tab-panel" id="tab-3">
+					<img src="images/beast2.png" alt="The Featured Creature">
+				</div>
+				
+				<div class="tab-panel" id="tab-4">
+					<img src="images/beast3.png" alt="The Featured Creature">
+				</div>
+
+			  </div><!-- .tabs -->
+
+			</section><!-- .page -->
 			
+			<script src="scripts/jquery-1.11.0.js"></script>
+			<script src="scripts/tabs.js"></script>
+					
 		</div>
 		
 		<div id="about">
