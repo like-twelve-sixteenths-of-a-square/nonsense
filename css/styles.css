@@ -139,6 +139,42 @@ main img {
 
 .tab-panel p {
   margin: 20px;}
+  
+ /* Filter and search options */
+#price-range {
+	width: 370px;
+	margin: 10px auto 30px auto;
+	text-align: center;
+	font-weight: bold;}
+#value-min, #value-max {
+	width: 100px; 
+	border: none; 	
+	background-color: #fff;
+	font-family: "Comic Neue", cursive;}
+#slider {margin: 30px 0 30px 0;}
+
+/* Table styles */
+table {
+	margin: 0 auto;
+	width: 500px;}
+table#rates	{width: 300px;}
+th, td {
+	border-radius: 3px;
+	color: #333;
+	padding: 7px 10px 5px 10px;
+	min-width: 9em;
+	text-align: left;}
+th {
+	background-color: #ffff66;
+	font-weight: bold;
+	text-transform: uppercase;}
+td {
+	background-color: #ffff99;}
+table.sortable th:hover {
+	cursor: pointer;}
+th.ascending, th.descending, table.sortable th:hover {
+	background-color: #00cccc;
+	color: #fff;}
 
 /* Style rules for footer content */
 footer p {

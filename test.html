@@ -9,6 +9,7 @@
 	<meta charset="utf-8">
 	
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jquery.nouislider.css" type="text/css" />
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,34 +93,16 @@
 	<!-- Use the main area to add the main content of the page, obviously-->
 	<main>
 	
-	<section class="page">
-
-      <div class="tabs">
-
-        <ul class="tab-list">
-          <li class="active"><a class="tab-control" href="#tab-1"><h3>Angle 1</h3></a></li>
-          <li><a class="tab-control" href="#tab-2"><h3>Angle 2</h3></a></li>
-          <li><a class="tab-control" href="#tab-3"><h3>Angle 3</h3></a></li>
-        </ul>
-
-        <div class="tab-panel active" id="tab-1">
-           <img src="images/beast.png" alt="The Featured Creature">
-        </div>
-
-        <div class="tab-panel" id="tab-2">
-           <img src="images/beast1.png" alt="The Featured Creature"> 
-        </div>
-		
-        <div class="tab-panel" id="tab-3">
-            <img src="images/beast2.png" alt="The Featured Creature">
-        </div>
-
-      </div><!-- .tabs -->
-
-    </section><!-- .page -->
+	<div id="price-range">
+      Min: <input type="text" id="value-min" />
+      Max: <input type="text" id="value-max" />
+    <div id="slider"></div>
+      <table id="rates"><thead><th>Name</th><th>Hourly rate ($)</th></thead></table>
+    </div>
 	
-	<script src="scripts/jquery-1.11.0.js"></script>
-    <script src="scripts/tabs.js"></script>
+	<script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.nouislider.js"></script>
+    <script src="scripts/dynamic-filter.js"></script>
 		
 	</main>
 	

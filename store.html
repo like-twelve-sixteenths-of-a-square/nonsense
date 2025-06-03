@@ -9,6 +9,7 @@
 	<meta charset="utf-8">
 	
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jquery.nouislider.css" type="text/css" />
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,6 +100,19 @@
 		
 			<img src="images/beast.png" alt="The Featured Creature">
 			
+			<p>Find a Freak for you!</p>
+			<div id="price-range">
+				Min: <input type="text" id="value-min" />
+				Max: <input type="text" id="value-max" />
+			<div id="slider">
+			</div>
+				<table id="rates"><thead><th>Freak</th><th>Freak $ Price</th></thead></table>
+			</div>
+		
+			<script src="scripts/jquery.js"></script>
+			<script src="scripts/jquery.nouislider.js"></script>
+			<script src="scripts/dynamic-filter.js"></script>
+			
 		</div>
 		
 		<div id="info">
@@ -113,19 +127,8 @@
 		  
 		  <div id="hotelName"></div>
 		  
-		  <div id="buffertop">
-		  <p>Regular Price</p>
-		  <div id="roomRate"></div>
-		  </div>
-		  
-		  <div id="buffer">
-		  <p>!!!Incredible Discounted Price!!!<p>
-		  <div id="specialRate"></div>
-		  </div>
-		  
-		  <p>Wild! Wild! Wild! This 2% discount only comes around once in a!</p>
-		  <div id="offerEnds"></div>
 		</div>
+		
 		<script src="scripts/example.js"></script>
 		
 		<div id="countit"></div>
