@@ -94,15 +94,25 @@
 	<!-- Use the main area to add the main content of the page, obviously-->
 	<main>
 		
-		<div id="greeting" class="Message">Hello
-			<span id="name">friend</span>!
-			
-		</div>
-		
 		<div id="toptext">
 		
+			<div class="container login">
+			  <form id="login" action="/login/" method="post">
+				<div class="two-thirds column" id="main">
+				  <fieldset>
+					<legend>Woah! Woah! Hold on, we've gotta make sure you're on the database. Who are you?</legend>
+					<label for="username">What's your name, intruder?</label>
+					<input type="text" id="username" name="username" />
+					<input type="submit" value="Login" />
+				  </fieldset>
+				</div><!-- .two-thirds -->
+			  </form>
+			</div><!-- .container -->
+			<script src="scripts/utilities.js"></script>
+			<script src="scripts/submit-event.js"></script>
+		
 			<p> Walcome to Funky Funk Man's Funky Funk Land. </p>
-			<p> We are aware that the name sucks, amongst 2,375 writers, zero had a decent name, all have been fired and replaced with ants. </p>
+			<p> We are aware that the name sucks, amongst 6,739 writers, zero had a decent name, all have been fired and replaced with ants. </p>
 			<p> Whatever, bear witness the halls of the Funky Funk Land and all its entertaining wonders. </p>
 			<p> Look around if you can, this wasn't easy. </p>
 			

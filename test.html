@@ -93,16 +93,20 @@
 	<!-- Use the main area to add the main content of the page, obviously-->
 	<main>
 	
-	<div id="price-range">
-      Min: <input type="text" id="value-min" />
-      Max: <input type="text" id="value-max" />
-    <div id="slider"></div>
-      <table id="rates"><thead><th>Name</th><th>Hourly rate ($)</th></thead></table>
-    </div>
-	
-	<script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery.nouislider.js"></script>
-    <script src="scripts/dynamic-filter.js"></script>
+	<div class="container login">
+      <form id="login" action="/login/" method="post">
+        <div class="two-thirds column" id="main">
+          <fieldset>
+            <legend>Woah! Woah! Hold on, we've gotta make sure you're on the database. Who are you?</legend>
+            <label for="username">What's your name, intruder?</label>
+            <input type="text" id="username" name="username" />
+            <input type="submit" value="Login" />
+          </fieldset>
+        </div><!-- .two-thirds -->
+      </form>
+    </div><!-- .container -->
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/submit-event.js"></script>
 		
 	</main>
 	
